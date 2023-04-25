@@ -44,7 +44,7 @@ function calcInvoice({sum, discountMinSum, discountPart, shippingFreeMinSum, shi
         let shippingSum = calcShipping(totalSum, shippingFreeMinSum, shippingPrice); // не изменяйте эту строку!!!
     totalSum = totalSum + shippingSum; // прибавьте к totalSum значение shippingSum
     let freeShipping; // создайте переменную freeShipping
-    boolean freeShipping = shippingSum == 0   // если shippingSum равно нулю, то freeShipping должна быть равна true, иначе freeShipping должна быть равна false
+    freeShipping = shippingSum == 0   // если shippingSum равно нулю, то freeShipping должна быть равна true, иначе freeShipping должна быть равна false
         
     // Конец решения задачи №2.3.
 
